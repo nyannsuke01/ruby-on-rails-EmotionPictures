@@ -1,0 +1,12 @@
+<div class="main users-index">
+  <div class="container">
+    <h4 class="users-heading">Contact Me</h4>
+    <% @users.each do |user| %>
+      <div class="users-index-item">
+        <div class="user-right">
+          <%= user.name %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

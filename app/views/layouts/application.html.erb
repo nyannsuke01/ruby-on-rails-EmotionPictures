@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Emotion Pictures</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+  </head>
+
+  <body>
+<header>
+  <div class="header-logo">
+     <%= link_to("Emotion Pictures", "/") %>
+  </div>
+  <ul class="header-menus">
+    <li>
+      <%= link_to("About E.P", "/about") %>
+    </li>
+    <li>
+      <%= link_to("投稿一覧", "/posts/index") %>
+    </li>
+    <li>
+      <%= link_to("新規投稿", "/posts/new") %>
+    </li>
+    <li>
+      <%= link_to("Contact", "/users/index") %>
+    </li>
+
+  </ul>
+</header>
+  <!-- flash[:notice]に代入されたメッセージを表示 -->
+    <% if flash[:notice] %>
+      <div class="flash">
+        <%= flash[:notice] %>
+      </div>
+    <% end %>
+
+    <%= yield %>
+
+    <footer>
+      <nav>
+      <a href="index.html">トップページ</a>
+      <a href="about.html">このブログについて</a>
+      </nav>
+      <p>Copyright 2019</p>
+
+
+    </footer>
+
+
+  </body>
+
+</html>
