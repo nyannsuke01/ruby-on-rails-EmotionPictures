@@ -1,24 +1,24 @@
-# README
+１.アプリケーションの概要
+Railsを使用してできたblog　〜写真を投稿後、コメントできるwebアプリ〜
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+２.アプリケーションの機能一覧
+・記事一覧表示機能
+・記事投稿機能
+・記事削除機能
+・記事更新機能
+・画像アップロード機能
+・DBテーブルのリレーション機能
+・単体テスト機能
+・結合テスト機能
 
-Things you may want to cover:
-
+３.アプリケーション内で使用している技術一覧
+* RubyOnRails
+  6.0
 * Ruby version
+  2.5.1
+* Sqlight
+  1.4
+* bootstrap
+  1.4.2
+* HTML5 CSS
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
